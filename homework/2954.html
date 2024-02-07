@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>나의 포트폴리오</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="container">
+    <h1 class="title">안녕하세요, 제 이름은 <b class="highlight" id="name">홍길동</b>입니다.</h1>
+
+    <img class="img" src="" alt="" width="200" />
+
+    <h2>소개</h2>
+    <p>
+      저는 <b class="highlight" id="job">[직업/전공]</b>으로 일하고 있습니다.
+      <b class="highlight" id="experience">[간단한 경력/학력]</b>을 가지고 있으며,
+      <b>[특기 또는 관심 분야]</b>에 대해 꾸준히 공부하고 있습니다.
+    </p>
+
+    <h2>프로젝트</h2>
+    <ul id="list-group">
+      <li>
+        <b>프로젝트 1:</b> <span class="project-1">[프로젝트 1 제목]</span>
+      </li>
+      <li>
+        <b>프로젝트 2:</b> <span class="project-2">[프로젝트 2 제목]</span>
+      </li>
+      <li>
+        <b>프로젝트 3:</b> <span class="project-3">[프로젝트 3 제목]</span>
+      </li>
+    </ul>
+
+    <h2>연락처</h2>
+    <p>이메일: <b class="highlight" id="email">[이메일 주소]</b></p>
+    <p>전화번호: <b class="highlight" id="phone">[전화번호]</b></p>
+    <p>SNS: <b class="highlight" id="sns">[SNS]</b></p>
+    <script>
+        const Name = document.querySelector("#name");
+        const Job = document.querySelector("#job");
+        const Experience = document.querySelector("#experience");
+        const listGroup = document.querySelector("#list-group");
+        const Email = document.querySelector("#email");
+        const Phone = document.querySelector("#phone");
+        const Sns = document.querySelector("#sns");
+        const image = document.querySelector("img");
+
+        Name.textContent = "홍길동";
+        Job.textContent = "의적";
+        Experience.textContent = "서당";
+        listGroup.querySelector(".project-1").textContent = "[프로젝트 1 제목]";
+        listGroup.querySelector(".project-2").textContent = "[프로젝트 2 제목]";
+        listGroup.querySelector(".project-3").textContent = "[프로젝트 3 제목]";
+        Email.textContent = "hgd@korea";
+        Phone.textContent = "010-1234-1234";
+        Sns.textContent = "hgd@sns.com";
+        image.src = "./profile.jpg";
+        image.alt = "홍길동";
+    </script>
+  </body>
+</html>
