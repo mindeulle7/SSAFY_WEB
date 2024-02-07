@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container, .box{
+            border: 1px solid black;
+        }
+        .container {
+            display: flex;
+            /* flex-direction: column; */
+            height: 300px;
+        }
+        .box1, .box3{
+            /* flex: 100px; */
+            flex: 1;
+        }
+        .box2{
+            flex: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- class에 여러개를 부여할 수 있음 -->
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+    </div>
+</body>
+</html>

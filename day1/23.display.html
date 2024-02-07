@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+    /* 
+        정해진 영역에서 한줄 전체
+        이 때 정해진 영역 조절할 수 있으면 block
+    */
+      h1,
+      p,
+      div {
+        border: 1px solid black;
+      }
+      div {
+        width: 300px;
+        display: inline;
+      }
+    /* 
+        정해진 영역을 조절할 수 없으면 inline
+        (margin, padding도 불가능)
+    */
+      a,
+      span {
+        border: 1px solid black;
+        display: block;
+      }
+      /* inline-block */
+      button{
+        width: 300px;
+        /* 요소를 보이지 않게 만드는 display 속성 */
+        display : none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello</h1>
+    <p>World</p>
+    <div>SSAFY</div>
+
+    <a href="">링크</a>
+    <span>스판</span>
+    <button>버튼</button>
+  </body>
+</html>

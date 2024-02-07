@@ -1,0 +1,123 @@
+* {
+  /* padding, border가 width에 포함된다. */
+  box-sizing: border-box;
+}
+
+.header-nav-list-wrapper {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header-nav-list-wrapper li {
+  margin-left: 10px;
+}
+
+.toggle-button {
+    font-weight: bold;
+  background-color: #3f3e3e;
+  border: 1px solid #eeeeee;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 5px;
+
+  /* 버튼에 마우스를 올리면 마우스 커서의 모양이 바뀜 */
+  cursor: pointer;
+}
+
+.main-container {
+  width: 600px;
+  height: 500px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image-logo {
+  width: 272px;
+}
+
+.search-container {
+  margin-top: 50px;
+  position: relative;
+}
+
+.search-input {
+  width: 100%;
+  height: 44px;
+  padding-left: 40px;
+  border-radius: 50px;
+  border: 1px solid #ddd;
+}
+
+.search-icon {
+  width: 17px;
+  position: absolute;
+  left: 10px;
+  top: 13px;
+}
+
+.bookmark-section {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.bookmark-item {
+  /* a 태그 속성제거 */
+  text-decoration: none;
+  width: 112px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 20px;
+}
+
+/* hover : 마우스를 아이콘위에 올렸을 때 투명해지는 속성 */
+.bookmark-item:hover {
+  opacity: 0.5;
+}
+
+.img-icon-wrapper {
+  width: 60px;
+  height: 60px;
+  background-color: #f2f3f5;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-icon-wrapper > img {
+  width: 60%;
+  height: 60%;
+}
+
+body{
+    background-color: white;
+}
+
+.toggle-button-darkmode{
+    background-color: #fff;
+    color: #3f3e3e;
+}
+
+.body-background-darkmode{
+    background-color: #3f3e3e;
+}
+
+.img-icon-wrapper-darkmode{
+    background-color: #fff;
+}
+
+.text-darkmode{
+    color: #fff;
+}

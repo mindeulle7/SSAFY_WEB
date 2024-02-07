@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fixed-class{
+            /* fixed -> 레이아웃을 고정, width를 지정하지 않는 경우 inline처럼 줄어든다 
+                        상위 요소에 영향을 받지 않고 고정된다.
+            */
+            position: fixed;
+            /* fixed를 쓰면 width가 줄어들음 */
+            /* fixed를 부여하면 inline block으로 성질이 바뀐다.
+               컨텐츠의 양만큼 너비가 알아서 맞춰진다.
+               그래서 width:100% 부여해서 길이를 강제로 늘리는 작업이 필요
+             */
+            /* top, right, botoom, left */
+            right:10px;
+            bottom:10px;
+        }
+        .height_class{
+            height: 4000px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="fixed-class">aaa</div>
+        <div class="height_class">bbb</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input class = "id" type="text" placeholder="아이디를 입력하세요.">
+    <input class = "pwd" type="text" placeholder="비밀번호를 입력하세요.">
+    <button> Login </button>
+    <script>
+        const id = document.querySelector(".id");
+        const pwd = document.querySelector(".pwd");
+        const btn  = document.querySelector("button");
+        btn.addEventListener("click", function(event) {
+            if(id.value !== "" && pwd.value !== ""){
+                if(id.value === "jony" && pwd.value === "123456"){
+                    console.log("로그인성공!");
+                }
+                else{
+                    console.log("로그인실패!")
+                    if(id.value !== "jony"){
+                        console.log("아이디가 틀렸습니다");
+                    }
+                    if(pwd.value !== "123456"){
+                        console.log("비밀번호가 틀렸습니다");
+                    }
+                }
+                console.log("id = " + id.value);
+                console.log("pwd = " + pwd.value);     
+            }
+        });
+        id.addEventListener("keyup", function (event) {
+            if(event.keyCode === 13){
+                if(id.value !== "" && pwd.value !== ""){
+                    if(id.value === "jony" && pwd.value === "123456"){
+                        console.log("로그인성공!");
+                    }
+                    else{
+                        console.log("로그인실패!")
+                        if(id.value !== "jony"){
+                            console.log("아이디가 틀렸습니다");
+                        }
+                        if(pwd.value !== "123456"){
+                            console.log("비밀번호가 틀렸습니다");
+                        }
+                    }
+                    console.log("id = " + id.value);
+                    console.log("pwd = " + pwd.value);     
+                
+                }
+            }
+        });
+        pwd.addEventListener("keyup", function (event) {
+            if(event.keyCode === 13){
+                if(id.value !== "" && pwd.value !== ""){
+                    if(id.value === "jony" && pwd.value === "123456"){
+                        console.log("로그인성공!");
+                    }
+                    else{
+                        console.log("로그인실패!")
+                        if(id.value !== "jony"){
+                            console.log("아이디가 틀렸습니다");
+                        }
+                        if(pwd.value !== "123456"){
+                            console.log("비밀번호가 틀렸습니다");
+                        }
+                    }
+                    console.log("id = " + id.value);
+                    console.log("pwd = " + pwd.value);     
+                
+                }
+            }
+        });
+        //event.target = 어떠한 event가 발생했을 때 해당 event의 element
+
+    </script>
+</body>
+</html>

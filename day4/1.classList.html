@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>Hello</div>
+  </body>
+  <script>
+    const div = document.querySelector("div");
+
+    //element.classList.add("String");
+    div.classList.add("test");
+
+    //classList.remove("String");
+    div.classList.remove("test");
+
+    //classList.toggle("String");
+    div.classList.toggle("test");
+    div.classList.toggle("test");
+
+    //classList.contains("String");
+    const result = div.classList.contains("test");
+    console.log(result);
+
+    div.classList.add("hello");
+    //classList.replace("String");
+    div.classList.replace("hello", "hi");
+
+  </script>
+</html>

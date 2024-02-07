@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .bg-yellow{
+            background-color: yellow;
+        }
+    </style>
+</head>
+  <body>
+    <button class="button-add">추가</button>
+    <button class="button-remove">제거</button>
+    <button class="button-toggle">토글</button>
+
+    <script>
+        const body = document.querySelector("body");
+        const buttonAdd = document.querySelector(".button-add");
+        const buttonRemove = document.querySelector(".button-remove");
+        const buttonToggle = document.querySelector(".button-toggle");
+
+        buttonAdd.addEventListener("click", function () {
+            body.classList.add("bg-yellow");
+        });
+
+        buttonRemove.addEventListener("click", function () {
+            body.classList.remove("bg-yellow");
+        });
+
+        buttonToggle.addEventListener("click", function() {
+            body.classList.toggle("bg-yellow");
+        });
+    </script>
+
+  </body>
+</html>

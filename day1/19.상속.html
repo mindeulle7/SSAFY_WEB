@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container,
+        .box{
+            border : 1px solid black;
+        }
+        .container{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- 어떤 요소를 컨트롤해야하지만, 두 개 이상의 다른 태그로 감싸야 하는 경우 -->
+    <div class="container">
+        <div class="box">a</div>
+        <div class="box">b</div>
+    </div>
+    <!-- 어떤 요소를 컨트롤해야하지만, 한번 다른 태그로 감싸야 하는 경우 -->
+    <div class="wrapper">
+        <button>버튼</button>
+    </div>
+</body>
+</html>

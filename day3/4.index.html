@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="first-ul-wrapper">
+        <ul class="first-ul">
+            <li>
+                <div class="test">
+                    hello
+                </div>
+            </li>
+            <li>b</li>
+            <li>c</li>
+        </ul>
+    </div>
+    <div>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+        </ul>
+    </div>
+    <script>
+        // .first-ul-wrapper ul -> 자손 선택자
+        // .first-ul-wrapper > ul -> 자식 선택자
+        // lis는 nodelist
+        // querySelector로 가져오면 주소를 가져온다고 생각
+        const firstLi = document.querySelectorAll(".first-ul li")[0];
+        console.dir(firstLi);
+    </script>
+  </body>
+</html>
